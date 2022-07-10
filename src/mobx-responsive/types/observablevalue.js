@@ -10,7 +10,6 @@ export class ObservableValue extends Atom{
         this.value_ = enhancer(value, undefined, name_);
     }
     setNewValue_(newValue) {
-        const oldValue = this.value_
         this.value_ = newValue
         this.reportChanged()
     }

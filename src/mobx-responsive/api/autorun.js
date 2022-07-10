@@ -11,6 +11,6 @@ export function autorun(view) {
     function reactionRunner() {
         view(reaction);
     }
-    // 调用reaction
+    // 调度reaction
     reaction.schedule_();
 }

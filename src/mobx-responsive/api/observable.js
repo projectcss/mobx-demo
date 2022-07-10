@@ -2,9 +2,6 @@ import {createObservableAnnotation, globalState} from '../internal';
 
 
 export const OBSERVABLE = "observable"
-export const OBSERVABLE_REF = "observable.ref"
-export const OBSERVABLE_SHALLOW = "observable.shallow"
-export const OBSERVABLE_STRUCT = "observable.struct"
 
 const observableAnnotation = createObservableAnnotation(OBSERVABLE)
 
@@ -15,7 +12,3 @@ Object.assign(createObservable, observableAnnotation);
 
 
 export var observable = Object.assign(createObservable, {})
-
-export function startBatch() {
-    globalState.inBatch++
-}

@@ -1,4 +1,4 @@
-import {makeObservable, observable, autorun} from '../mobx';
+import {makeObservable, observable, autorun} from './mobx';
 
 class Store {
     count = 0;

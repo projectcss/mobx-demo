@@ -12,8 +12,6 @@ export function addObserver(observable, node) {
 }
 
 export function propagateChanged(observable) {
-    observable.lowestObserverState_ = 2
-
     observable.observers_.forEach(d => {
         d.onBecomeStale_()
     })

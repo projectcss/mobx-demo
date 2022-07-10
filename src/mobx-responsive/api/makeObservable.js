@@ -1,4 +1,4 @@
-import {$mobx, asObservableObject, ownKeys} from '../internal';
+import {asObservableObject, ownKeys, $mobx} from '../internal';
 
 export function makeObservable(target, annotations, options) {
     const adm =  asObservableObject(target, options)[$mobx];

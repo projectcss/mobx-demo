@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import store from '../src/mobx-responsive/test'
 
 function App() {
   return (
